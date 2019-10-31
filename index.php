@@ -105,7 +105,7 @@ $dataPoints = array(
          background-color: white;
          padding: 20px;
          margin-top: 20px;
-         max-height: 566px;
+         max-height: 650px;
        }
      /* Clear floats after the columns */
       .row:after {
