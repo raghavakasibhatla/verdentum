@@ -25,9 +25,9 @@
 }
 </style>
 <?php
-$servername = "3.231.238.205";
-$username = "raghava";
-$password = "raghava1,";
+$servername = "localhost";
+$username = "root";
+$password = "";
 $dbname = "sudhakar";
 
 // Create connection

@@ -1,7 +1,7 @@
 <?php
-  $servername = "3.231.238.205";
-  $username = "raghava";
-  $password = "raghava1,";
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
   $dbname = "sudhakar";
 
   // Create connection
@@ -97,12 +97,11 @@ $dataPoints = array(
          background-color: white;
          padding: 20px;
          margin-top: 20px;
-         max-height: 566px;
+         max-height: 465px;
          overflow-y: scroll;
-         
-      }
 
-      /* Clear floats after the columns */
+      }
+     /* Clear floats after the columns */
       .row:after {
         content: "";
         display: table;
@@ -247,6 +246,7 @@ $dataPoints = array(
           } else {
             echo "0 results";
           } ?>
+          
           <!-- <div id="chartContainer_pie" style="height: 240px; width: 100%;"></div> -->
           <!-- <script src="graph.js"></script> -->
           <!-- <a href="month.php">click</a> -->
