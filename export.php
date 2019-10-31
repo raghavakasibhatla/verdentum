@@ -2,7 +2,7 @@
       //export.php  
  if(isset($_POST["export"]))  
  {  
-      $connect = mysqli_connect("localhost", "root", "", "sudhakar");  
+      $connect = mysqli_connect("3.231.238.205", "raghava", "raghava1,", "sudhakar");  
       header('Content-Type: text/csv; charset=utf-8');  
       header('Content-Disposition: attachment; filename=data.csv');  
       $output = fopen("php://output", "w");  

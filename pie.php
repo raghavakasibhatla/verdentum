@@ -1,5 +1,5 @@
 <?php  
- $conn = mysqli_connect("localhost", "root", "", "sudhakar");  
+ $conn = mysqli_connect("3.231.238.205", "raghava", "raghava1,", "sudhakar");  
     $sql5="SELECT  id FROM verdentum";
     $result5=$conn ->query($sql5);
     $cnt1=mysqli_num_rows($result5);
