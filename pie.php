@@ -16,7 +16,7 @@
       
       </head>  
       <body>  
-         <div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+         <div id="container" style="min-width: 320px; height: 410px; max-width: 600px; margin: 0 auto"></div>
      <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
