@@ -97,7 +97,7 @@ $dataPoints = array(
          background-color: white;
          padding: 20px;
          margin-top: 20px;
-         max-height: 660px;
+         max-height: 650px;
          overflow-y: scroll;
 
       }
