@@ -101,6 +101,12 @@ $dataPoints = array(
          overflow-y: scroll;
 
       }
+      .card1 {
+         background-color: white;
+         padding: 20px;
+         margin-top: 20px;
+         max-height: 566px;
+       }
      /* Clear floats after the columns */
       .row:after {
         content: "";
@@ -224,7 +230,7 @@ $dataPoints = array(
           } ?>
     </div>   
     </div>     
-<div class="card">
+<div class="card1">
     <img  class="card-img-top">
     <div class="card-body">
     <!-- <marquee>  <h5 ><span class="h3"class="card-title" >VERDENTUM INTERNAL WORKS </h5> </span></marquee> -->
