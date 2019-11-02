@@ -1,7 +1,7 @@
 <?php
 $servername = "3.231.238.205";
-$username = "raghava";
-$password = "raghava1,";
+  $username = "raghava";
+  $password = "raghava1,";
 $dbname = "sudhakar";
 
 // Create connection
@@ -13,6 +13,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
 <style>
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -146,7 +150,7 @@ input[type=submit]:hover {
             $result = mysqli_query($conn, $query);
             $data = mysqli_fetch_array($result); 
 } ?>
- <form name="frmedit" action="update.php" method="post">
+ <form name="frmedit" action="update1.php" method="post">
 	<label>Name :</label>
       <input type="hidden" name="id" value="<?php if(!empty($data)){echo $data['id'];} ?>">
       <input name="up_name" required="required" type="text" value= "<?php if(!empty($data)){ echo $data['name'];}?>">
@@ -157,36 +161,20 @@ input[type=submit]:hover {
   <label>Mode of interview:</label>
       <input name="mode_update" required="required" type="text" value= "<?php if(!empty($data)){echo $data['mode']; } ?>">   
   <label>Skype/Zoom id:</label>
-      <input name="skype_update" required="required" type="text" value= "<?php if(!empty($data)){echo $data['skype_id']; } ?>">
+      <input name="skype_update"  type="text" value= "<?php if(!empty($data)){echo $data['skype_id']; } ?>">
   <label>Reason to change :</label>      
       <input name="change" required="required" type="text" value= "<?php if(!empty($data)){echo $data['change_int']; } ?>">
       <br></br>
   		<input name="stdupdate" type="submit" value="Update" />  
  </form>
-     <?php if ( isset($_POST['stdupdate'])){		 	
-  		 	$user_id=$_POST['id'];
-  		 	$up_name=$_POST['up_name'];
-  		 	$up_date=$_POST['up_date'];
-        $time_update=$_POST['time_update'];
-        $mode_update=$_POST['mode_update'];
-        $skype_update=$_POST['skype_update'];
-        $change=$_POST['change'];
-        // echo $remarks;die();
-        //$sql = "INSERT INTO sudhakar_1 (remarks)VALUES('".$_POST['remarks']."')";
-  		 	$query = "UPDATE verdentum SET interview_date='$up_date', name='$up_name', time_hh='$time_update' ,mode='$mode_update', skype_id='$skype_update', change_int='$change' WHERE id ='".$user_id."'";
-        // echo $query;die();
-  		 	$res = mysqli_query($conn, $query);
-  		 	if($res){
-  		 		echo "data updated";
-  		 	}      
-        }?>
-<?php  mysqli_close($conn); ?>
+     
+
+
 
 </div>
 </head>
 </body>
 </html> 
-
 
 
 

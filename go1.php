@@ -1,7 +1,7 @@
 <?php
 $servername = "3.231.238.205";
-$username = "raghava";
-$password = "raghava1,";
+  $username = "raghava";
+  $password = "raghava1,";
 $dbname = "sudhakar";
 
 // Create connection

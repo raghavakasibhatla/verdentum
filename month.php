@@ -9,10 +9,10 @@
   if ($conn->connect_error) {
       die("Connection failed: " . $conn->connect_error);
   }
- $sqloct="SELECT id FROM verdentum WHERE month( interview_date)='10'";
+    $sqloct="SELECT id FROM verdentum WHERE month( interview_date)='10' ";
     $resultoct=$conn ->query($sqloct);
     $cntoct=mysqli_num_rows($resultoct);
-    $sqloct1="SELECT  * FROM verdentum WHERE  interview_att = 'Attended' AND month( interview_date)='10' ";
+    $sqloct1="SELECT  * FROM verdentum WHERE  interview_att = 'Attended' AND month( interview_date)='10'  AND '2019' ";
     $resultoct1=$conn ->query($sqloct1);
     $cntoct1=mysqli_num_rows($resultoct1); 
     $sqlnov="SELECT id FROM verdentum WHERE month( interview_date)='11'";

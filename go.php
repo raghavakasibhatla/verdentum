@@ -1,7 +1,7 @@
 <?php
 $servername = "3.231.238.205";
-$username = "raghava";
-$password = "raghava1,";
+  $username = "raghava";
+  $password = "raghava1,";
 $dbname = "sudhakar";
 
 // Create connection
@@ -265,6 +265,8 @@ label{margin-left: 20px;}
                 <option value="Full Stack developer">Full Stack developer </option>
                 <option value="PHP Development">PHP Development </option>
                 <option value="Operations">Operations</option>
+                <option value="Andriod">Andriod</option>
+                <option value="AWS">AWS</option>
                 <option value="OTHERS">OTHERS</option>
                 </select><br>
 Name<span class="error">*  </span> <br>

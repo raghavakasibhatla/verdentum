@@ -22,7 +22,7 @@
     $result2=$conn ->query($sql2);
     $sql3="SELECT  * FROM verdentum WHERE DATE(interview_date) = CURRENT_DATE() limit 10";
     $result3=$conn ->query($sql3); 
-    $sql4="SELECT  * FROM verdentum WHERE  interview_att = 'Attended'";
+    $sql4="SELECT  * FROM verdentum WHERE  interview_att = 'Attended' ORDER BY id DESC";
     $result4=$conn ->query($sql4);
     $cnt=mysqli_num_rows($result4); ?>
 <?php
@@ -97,17 +97,17 @@ $dataPoints = array(
          background-color: white;
          padding: 20px;
          margin-top: 20px;
-         max-height: 650px;
-         overflow-y: scroll;
-
+         max-height: 566px;
+         overflow-y: scroll; 
       }
       .card1 {
          background-color: white;
          padding: 20px;
          margin-top: 20px;
-         max-height: 650px;
+         max-height: 566px;
        }
-     /* Clear floats after the columns */
+
+      /* Clear floats after the columns */
       .row:after {
         content: "";
         display: table;
@@ -252,7 +252,6 @@ $dataPoints = array(
           } else {
             echo "0 results";
           } ?>
-          
           <!-- <div id="chartContainer_pie" style="height: 240px; width: 100%;"></div> -->
           <!-- <script src="graph.js"></script> -->
           <!-- <a href="month.php">click</a> -->

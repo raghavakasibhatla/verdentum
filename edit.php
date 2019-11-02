@@ -1,7 +1,7 @@
 <?php
 $servername = "3.231.238.205";
-$username = "raghava";
-$password = "raghava1,";
+  $username = "raghava";
+  $password = "raghava1,";
 $dbname = "sudhakar";
 
 // Create connection
@@ -162,7 +162,7 @@ label, input {
             $data = mysqli_fetch_array($result); 
  } 
 ?>
- <form name="edit" action="edit.php" method="post">
+ <form name="edit" action="edit1.php" method="post">
 	<label>Name :</label>
       <input type="hidden" class="input-group" name="id" value="<?php if(!empty($data)){echo $data['id'];} ?>">
       <input name="up_name" class="input-group" required="required" type="text" readonly value= "<?php if(!empty($data)){ echo $data['name'];}?>"> 
@@ -180,28 +180,7 @@ label, input {
       <br></br>
   		<input name="stdupdate" type="submit" value="Update" />  
  </form>
-     <?php if ( isset($_POST['stdupdate'])){		 	
-  		 	$user_id=$_POST['id'];
-  		 	$up_name=$_POST['up_name'];
-  		 	$up_date=$_POST['up_date'];
-        $status_update=$_POST['status_update'];
-        $result_update=$_POST['result_update'];
-        $interview_att_update=$_POST['interview_att_update']; 
-        $int_assi=$_POST['int_assi']; 
-
-        // echo $remarks;die();
-        //$sql = "INSERT INTO sudhakar_1 (remarks)VALUES('".$_POST['remarks']."')";
-  		 	$query = "UPDATE verdentum SET name='$up_name', interview_date='$up_date',  status='$status_update', result='$result_update' ,interview_att='$interview_att_update' ,
-        int_assi='$int_assi' WHERE id ='".$user_id."'";
-         // echo $query;die();
-  		 	$res = mysqli_query($conn, $query);
-  		 	if($res){
-  		 		echo "data updated";
-  		 	}else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}      
-        }?>
-<?php  mysqli_close($conn); ?>
+     
 
 </div>
 
