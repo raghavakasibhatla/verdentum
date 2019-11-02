@@ -183,6 +183,7 @@ $dataPoints = array(
               <p class="serif"><b>Name</b>&emsp;&emsp;&nbsp;&emsp;&emsp;             :<span class="error"> <?php echo $row5['name']; ?>  </span></p>
               <p class="serif"><b>Interview Date</b>&nbsp;&nbsp;:<span class="error">  <?php echo $row5['interview_date'];?></span></p>
               <p class="serif"><b>Profile</b>&emsp;&emsp;&nbsp;&emsp;&ensp;        :<span class="error"> <?php echo $row5['profile'];?> </span> </p>
+              <p class="serif"><b>Assigned</b>&emsp;&nbsp;&emsp;&ensp;&nbsp;   :<span class="error"> <?php echo $row5['int_assi'];?> </span></p>
               <p class="serif"><b>Status</b>&emsp;&emsp;&nbsp;&emsp;&ensp;&nbsp;  :<span class="error"> <?php echo $row5['status'];?> </span></p>
               <p class="serif"><b>Result</b>&emsp;&emsp;&nbsp;&emsp;&ensp;&nbsp;  :<span class="error"> <?php echo $row5['result'];?> </span></p>
               <center><p class="serif"> * * * * * * *</p></center>    
