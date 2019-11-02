@@ -12,7 +12,8 @@
  <!DOCTYPE html>  
  <html> 
  <head>
-
+<title>VERDENTUM</title> 
+  <link rel="icon" href="images.png" type="image" sizes="10x10">
       
       </head>  
       <body>  

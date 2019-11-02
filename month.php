@@ -116,7 +116,9 @@
 ?>
 <!DOCTYPE HTML>
 <html>
-<head>  
+<head> 
+<title>VERDENTUM</title> 
+  <link rel="icon" href="images.png" type="image" sizes="10x10"> 
 <script>
 window.onload = function () {
 var chart = new CanvasJS.Chart("chartContainer_bar", {

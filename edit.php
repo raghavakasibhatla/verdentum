@@ -12,6 +12,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 <!DOCTYPE html>
 <html>
 <head>
+  <title>VERDENTUM</title> 
+  <link rel="icon" href="images.png" type="image" sizes="10x10">
    <title>Export to csv</title>  
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  

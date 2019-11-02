@@ -12,6 +12,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 <!DOCTYPE html>
 <html>
 <head>
+  <title>VERDENTUM</title> 
+  <link rel="icon" href="images.png" type="image" sizes="10x10">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
