@@ -165,7 +165,7 @@ $dataPoints = array(
   <div class="card">
     <img  class="card-img-top" >
     <div  class="card-body"  >
-     <center><a href="go.php" class="button" style=" text-decoration: none"><strong>CREATE NEW INTERVIEW</strong></a></center>
+     <center><a href="contact_form.php" class="button" style=" text-decoration: none"><strong>CREATE NEW INTERVIEW</strong></a></center>
      <br>
       <br>
       <br>
@@ -174,7 +174,7 @@ $dataPoints = array(
       <br>
       <br>
       <!-- <h5>LIST OF INTERVIEW SCHEDULED</h5> -->
-    <center><a href="go1.php" class="button" style=" text-decoration: none"><strong>SCHEDULED LIST</strong></a></center>
+    <center><a href="datatable.php" class="button" style=" text-decoration: none"><strong>SCHEDULED LIST</strong></a></center>
     <br></br>
     <center> <h3><span class="h3"><b><i>Attendees Summary</i></b></h3></center>
       <?php if ($result->num_rows > 0) {

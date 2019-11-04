@@ -53,8 +53,12 @@ $file_info = pathinfo($_FILES['fileupload']['name']);
                         $new_file_name="";
                       }
 
- $sql = "INSERT INTO  verdentum (profile,name,gender,email,phone_number,experience,current_ctc,expected_ctc,first_contact,mode,skype_id,interview_date,time_hh,comments,file)VALUES(
+ $sql = "INSERT INTO  verdentum (profile,relevant_exp,domain,notice_period,leave_text,name,gender,email,phone_number,experience,current_ctc,expected_ctc,first_contact,mode,skype_id,interview_date,time_hh,comments,file)VALUES(
  '".$_POST['profile_user']."',
+ '".$_POST['relevant']."',
+ '".$_POST['domains']."',
+ '".$_POST['notice']."',
+ '".$_POST['leave']."',
  '".$_POST['name']."',
  '".$_POST['sex']."',
  '".$_POST['email']."',

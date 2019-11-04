@@ -6,7 +6,7 @@
       header('Content-Type: text/csv; charset=utf-8');  
       header('Content-Disposition: attachment; filename=data.csv');  
       $output = fopen("php://output", "w");  
-      fputcsv($output, array('id', 'profile', 'name', 'Gender', 'email', 'Phone_number','Experience','current CTC','Expected CTC','First Contact Status','mode of interview','skype id','interview date','time','file','status','result','interview attendance','reason to change','assignedto'));  
+      fputcsv($output, array('id', 'profile', 'Relevant experience in years','What domains have you worked on?','Whats your notice period?','Why do you want to leave your current role/company?','name', 'Gender', 'email', 'Phone_number','Experience','current CTC','Expected CTC','First Contact Status','mode of interview','skype id','interview date','time','file','status','result','interview attendance','reason to change','assignedto'));  
       $query = "SELECT * FROM verdentum ORDER BY id DESC";  
       $result = mysqli_query($connect, $query);  
       while($row = mysqli_fetch_assoc($result))  
